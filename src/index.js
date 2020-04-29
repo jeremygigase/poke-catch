@@ -69,7 +69,7 @@ function App() {
     setLoading(true)
     setError(false)
       axios
-      .get(process.env.REACT_APP_ENDPOINTPOKEMON + pokeId())
+      .get("https://pokeapi.co/api/v2/pokemon/" + pokeId())
       .then(response => {
         //console.log(response.data)
         setLoading(false)
